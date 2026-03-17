@@ -17,7 +17,7 @@ on:
         required: true
         type: choice
         options:
-          - remote
+          - alexjapan-aicatalog-alexjapan-aicatalog-huggingface-remote
           - weiaicatalog-weiaicatalog-huggingface-remote
 
       action_user:
