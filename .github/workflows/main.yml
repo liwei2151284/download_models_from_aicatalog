@@ -70,6 +70,6 @@ jobs:
         env:
 
           HF_REPO_ID: ${{ github.event.inputs.model_id }}
-          HF_TOKEN: $HUGGINGFACE_TOKEN
+          HF_TOKEN: ${{ env.HUGGINGFACE_TOKEN }}
         run: |
           python download_from_Artifactory_huggingface.py
