@@ -15,7 +15,10 @@ on:
       huggingface_repo:
         description: "Artifactory huggingface repo name"
         required: true
-        default: "weiaicatalog-weiaicatalog-huggingface-remote"
+        type: choice
+        options:
+          - remote
+          - weiaicatalog-weiaicatalog-huggingface-remote
 
       action_user:
         description: "action_user"
