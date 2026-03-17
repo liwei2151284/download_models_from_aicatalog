@@ -62,11 +62,11 @@ jobs:
 
       - name: Set Alex secret
         if: ${{ github.event.inputs.action_user == 'Alex' }}
-        run: echo "HUGGINGFACE_TOKEN=${{ secrets.Alex_TOKEN }}" >> $GITHUB_ENV
+        run: echo "HUGGINGFACE_TOKEN=${{ secrets.ALEX_TOKEN }}" >> $GITHUB_ENV
 
       - name: Set Wei secret
         if: ${{ github.event.inputs.action_user == 'Wei' }}
-        run: echo "HUGGINGFACE_TOKEN=${{ secrets.Wei_TOKEN }}" >> $GITHUB_ENV
+        run: echo "HUGGINGFACE_TOKEN=${{ secrets.WEI_TOKEN }}" >> $GITHUB_ENV
 
 
       - name: Download HuggingFace model via Artifactory
